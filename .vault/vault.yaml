@@ -1,0 +1,43 @@
+name: Plant 123
+description: A description of Plant 123.
+
+solutions:
+  - name: Line ABC
+    description: A description of Line ABC.
+    projects:
+      - name: Controller ABC
+        path: line_abc/src/abc.acd
+        description: A LogixDesigner project for controller ABC.
+
+      - name: Mixer ABC
+        path: shared/mixer.acd
+        description: A LogixDesigner project for mixer ABC.
+
+      - name: Other machines
+        type: ftds
+        path: line_abc/src/machines
+        description: A Raider project containing multiple machine configurations.
+
+      - name: Spec
+        type: eplan
+        path: line_abc/drawing
+        description: An ePlan project of Line ABC.
+
+      - name: Tests
+        path: line_abc/tests/sim.e3d
+        description: An Emulate3D project used to test Line ABC.
+
+  - name: Line XYZ
+    description: A description of Line XYZ
+    projects:
+      - name: Machine 1
+        path: line_xyz/machine1.acd
+        description: A LogixDesigner project for Machine 1.
+
+      - name: Machine 2
+        path: line_xyz/machine2.acd
+        description: A LogixDesigner project for Machine 2.
+
+      - name: Mixer XYZ
+        path: shared/mixer.acd
+        description: A LogixDesigner project for mixer XYZ.
